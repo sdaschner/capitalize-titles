@@ -6,9 +6,9 @@ import java.util.Set;
 @ApplicationScoped
 public class TitleCapitalizer {
 
-    private final Set<Integer> wordDelimiters = Set.of((int) ' ', (int) '-');
+    private final Set<Integer> wordDelimiters = Set.of((int) ' ', (int) '-', (int) '\n');
     private final Set<String> ignoredWords = Set.of("a", "and", "as", "at", "but", "by", "for", "if", "in", "nor", "of", "off", "on", "or", "the", "to", "up");
-    private final Set<String> stopSymbols = Set.of(":", "- ", "–", "—");
+    private final Set<String> stopSymbols = Set.of(":", "- ", "–", "—", "\n");
 
     public String capitalize(String title) {
         if (title == null || title.isBlank())

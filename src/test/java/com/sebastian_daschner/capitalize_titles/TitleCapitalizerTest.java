@@ -60,4 +60,21 @@ class TitleCapitalizerTest {
         assertThat(capitalizer.capitalize("a river in thä¿ city")).isEqualTo("A River in Thä¿ City");
     }
 
+    @Test
+    void multi_line() {
+        assertThat(capitalizer.capitalize("""
+                a river runs through the city
+                a river runs through a city
+                the river and the city
+                another river as the city
+                a river but the city
+                """)).isEqualTo("""
+                A River Runs Through the City
+                A River Runs Through a City
+                The River and the City
+                Another River as the City
+                A River but the City
+                """);
+    }
+
 }
