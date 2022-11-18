@@ -20,7 +20,9 @@ _Caution No 2:_ Has been created by a non-native speaker 🙂
 
 == Building
 
-TBA
+To build a native executable, execute: `mvn package -P native`
+
+This will create an executable binary under `target/capitalize-titles-runner`
 
 
 == Command Line Usage
