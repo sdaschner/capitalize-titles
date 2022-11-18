@@ -44,7 +44,7 @@
     </dependencies>
 
     <build>
-        <finalName>capitalize-titles</finalName>
+        <finalName>capitalize-title</finalName>
         <plugins>
             <plugin>
                 <groupId>io.quarkus</groupId>

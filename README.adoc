@@ -22,7 +22,7 @@ _Caution No 2:_ Has been created by a non-native speaker 🙂
 
 To build a native executable, execute: `mvn package -P native`
 
-This will create an executable binary under `target/capitalize-titles-runner`
+This will create an executable binary under `target/capitalize-title-runner`
 
 
 == Command Line Usage
