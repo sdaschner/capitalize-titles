@@ -31,7 +31,7 @@ public class CapitalizeCommand implements Runnable {
             }
         }
 
-        System.out.println(capitalizer.capitalize(title));
+        System.out.print(capitalizer.capitalize(title));
     }
 
 }
