@@ -2,19 +2,19 @@
 
 Java API and command line program to capitalize English titles according to the APA style (in a best-effort manner).
 
-Caution: It doesn't perform any Grammar analysis and thus might incorrectly return some prepositions, conjunctions, adjective, or adverbs, such as yet, out, so, etc.
+_Caution:_ It doesn't perform any Grammar analysis and thus might incorrectly return some prepositions, conjunctions, adjective, or adverbs, such as yet, out, so, etc.
 
-Second caution: Has been created by a non-native speaker 🙂
+_Caution No 2:_ Has been created by a non-native speaker 🙂
 
 
 == Features
 
-- Capitalizes English titles according to APA +
-  Example: `a river runs through the city` -> `A River Runs Through the City`
+- Capitalizes English titles according to APA + 
+  Example: `a river runs through the city` -> `A River Runs Through the City` + 
   Example: `my cloud-native deployment` -> `My Cloud-Native Deployment`
-- Ignores trailing special characters (helpful for AsciiDoc & Markdown content) +
+- Ignores trailing special characters (helpful for AsciiDoc & Markdown content) + 
   Example: `=== a river runs through the city` -> `=== A River Runs Through the City`
-- Honors certain characters as stop characters +
+- Honors certain characters as stop characters + 
   Example: `breaking news: a river runs through the city` -> `Breaking News: A River Runs Through the City`
 
 
