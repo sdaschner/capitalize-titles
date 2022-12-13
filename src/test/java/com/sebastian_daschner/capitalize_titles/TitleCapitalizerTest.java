@@ -33,6 +33,7 @@ class TitleCapitalizerTest {
         assertThat(capitalizer.capitalize("the river or the city")).isEqualTo("The River or the City");
         assertThat(capitalizer.capitalize("the river to the city")).isEqualTo("The River to the City");
         assertThat(capitalizer.capitalize("the river up the city")).isEqualTo("The River up the City");
+        assertThat(capitalizer.capitalize("the river vs the city")).isEqualTo("The River vs the City");
     }
 
     @Test
