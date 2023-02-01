@@ -1,0 +1,34 @@
+# Generated with JReleaser 1.4.0 at 2023-02-01T09:33:21.819094+01:00
+project:
+  name: capitalize-titles
+  version: 1.0-SNAPSHOT
+  description: Capitalize English titles
+  longDescription: Capitalizes English titles according to APA style
+  authors:
+    - Sebastian Daschner
+  license: Apache-2.0
+  website: https://github.com/sdaschner/capitalize-titles
+  docsUrl: https://github.com/sdaschner/capitalize-titles
+  java:
+    groupId: com.sebastian-daschner
+    version: 17
+  inceptionYear: 2023
+
+release:
+  github:
+    owner: sdaschner
+
+distributions:
+  capitalize-titles:
+    type: NATIVE_IMAGE
+    executable:
+      name: capitalize-titles
+      windowsExtension: bat
+    artifacts:
+      - path: target/distributions/{{distributionName}}-{{projectVersion}}-linux-x86_64.tar.gz
+        platform: linux-x86_64
+      - path: target/distributions/{{distributionName}}-{{projectVersion}}-windows-x86_64.zip
+        platform: windows-x86_64
+      - path: target/distributions/{{distributionName}}-{{projectVersion}}-osx-x86_64.zip
+        platform: osx-x86_64
+
