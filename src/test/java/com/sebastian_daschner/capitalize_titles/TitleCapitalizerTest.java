@@ -42,6 +42,12 @@ class TitleCapitalizerTest {
         assertThat(capitalizer.capitalize("== a river runs through the city")).isEqualTo("== A River Runs Through the City");
         assertThat(capitalizer.capitalize(" a river runs through the city ")).isEqualTo(" A River Runs Through the City ");
         assertThat(capitalizer.capitalize("; a river runs through the city?")).isEqualTo("; A River Runs Through the City?");
+        assertThat(capitalizer.capitalize("*a river runs through the city*")).isEqualTo("*A River Runs Through the City*");
+        assertThat(capitalizer.capitalize("-a river runs through the city")).isEqualTo("-A River Runs Through the City");
+        assertThat(capitalizer.capitalize("=a river runs through the city")).isEqualTo("=A River Runs Through the City");
+        assertThat(capitalizer.capitalize(".a river runs through the city")).isEqualTo(".A River Runs Through the City");
+        assertThat(capitalizer.capitalize("# a river runs through the city")).isEqualTo("# A River Runs Through the City");
+        assertThat(capitalizer.capitalize("#a river runs through the city")).isEqualTo("#A River Runs Through the City");
     }
 
     @Test

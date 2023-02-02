@@ -6,7 +6,6 @@ import java.util.Set;
 @ApplicationScoped
 public class TitleCapitalizer {
 
-    private final Set<Integer> wordDelimiters = Set.of((int) ' ', (int) '-', (int) '\n');
     private final Set<String> ignoredWords = Set.of("a", "and", "as", "at", "but", "by", "for", "if", "in", "nor", "of", "off", "on", "or", "the", "to", "up", "vs");
     private final Set<String> stopSymbols = Set.of(":", "- ", "–", "—", "\n");
 
@@ -26,7 +25,7 @@ public class TitleCapitalizer {
             int currentIndex = index;
             boolean stopChar = stopSymbols.stream().anyMatch(s -> currentIndex == builder.indexOf(s, currentIndex));
 
-            if (wordDelimiters.contains(codePoint)) {
+            if (!Character.isLetterOrDigit(codePoint)) {
                 capitalizeNextWord = true;
             } else if (capitalizeNextWord) {
                 int nextWordEnd = Math.max(builder.indexOf(" ", index), builder.indexOf("-", index));
